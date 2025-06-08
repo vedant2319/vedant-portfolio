@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Code, Brain, Users, Award, Calendar, ArrowRight, Menu, X, Download } from 'lucide-react';
 
@@ -19,46 +20,7 @@ const Portfolio = () => {
   };
 
   const handleResumeDownload = () => {
-    // Create a demo PDF blob for download
-    const demoContent = `
-VEDANT NAIK - RESUME
-Computer Science Engineer | AI & ML Specialist
-
-Contact: naikvedant82@gmail.com | +91 9503657153
-Location: Sawantwadi, Maharashtra
-
-EDUCATION:
-Bachelor of Engineering - Computer Science [AI & ML]
-Finolex Academy of Management & Technology
-University of Mumbai • 78% • May 2025
-
-EXPERIENCE:
-Machine Learning Intern - Feynn Labs (Jun – Aug 2024)
-AI/ML Virtual Intern - IBM SkillsBuild (Jun – Jul 2024)
-
-SKILLS:
-Programming: Python, Java, JavaScript, SQL
-Web Technologies: HTML5, CSS3, React.js, Node.js, MERN Stack
-Tools & Platforms: Git, Docker, Jenkins, .NET
-
-PROJECTS:
-• UniSched – Smart Timetable Scheduler
-• Upahar – Food Ordering Web App
-• TripZip – Travel Planner Website
-• Employee Management System
-
-This is a demo resume. Download the actual PDF from the portfolio.
-    `;
-
-    const blob = new Blob([demoContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Vedant_Naik_Resume.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    window.open('https://drive.google.com/file/d/1MEBXte7SCDfuqYiO1LtwS_vFtDISRkPS/view?usp=sharing', '_blank');
   };
 
   const skills = {
@@ -133,8 +95,8 @@ This is a demo resume. Download the actual PDF from the portfolio.
                     key={item}
                     onClick={() => scrollToSection(item)}
                     className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 ${activeSection === item
-                        ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
-                        : 'text-gray-600 hover:bg-blue-100 hover:text-blue-700 hover:shadow-md'
+                      ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
+                      : 'text-gray-600 hover:bg-blue-100 hover:text-blue-700 hover:shadow-md'
                       }`}
                   >
                     {item.charAt(0).toUpperCase() + item.slice(1)}
