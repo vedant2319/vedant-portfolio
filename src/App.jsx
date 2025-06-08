@@ -178,7 +178,7 @@ const Portfolio = () => {
                 Download Resume
               </button>
               <a
-                href=""
+                href="https://www.linkedin.com/in/vedantnaik2319/"
                 className="bg-white hover:bg-gray-50 text-purple-600 border-2 border-purple-500 hover:border-purple-600 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center group"
               >
                 <Linkedin size={20} className="mr-2 group-hover:animate-bounce" />
@@ -466,7 +466,7 @@ const Portfolio = () => {
                   <Linkedin size={32} className="text-pink-600 group-hover:animate-bounce" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">LinkedIn</h3>
-                <a href="#" className="text-pink-600 hover:text-pink-700 transition-colors text-sm sm:text-base">
+                <a href="https://www.linkedin.com/in/vedantnaik2319/" className="text-pink-600 hover:text-pink-700 transition-colors text-sm sm:text-base">
                   vedant2319
                 </a>
               </div>
